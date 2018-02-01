@@ -9,7 +9,7 @@
             file="flora.report_pricetemplatelabel"/>
             
         <template id="report_pricetemplatelabel">
-            <t t-call="report.html_container">
+            <t t-call="web.basic_layout">
                 <div class="page">
                     <t t-foreach="docs" t-as="template">
                         <t t-foreach="template.product_variant_ids" t-as="product">
