@@ -5,15 +5,15 @@
             string="Etiquette prix"
             model="product.template"
             report_type="qweb-pdf"
-            name="price_etiquette.report_pricetemplatelabel"
-            file="price_etiquette.report_pricetemplatelabel"/>
+            name="flora.report_pricetemplatelabel"
+            file="flora.report_pricetemplatelabel"/>
             
         <template id="report_pricetemplatelabel">
             <t t-call="report.html_container">
                 <div class="page">
                     <t t-foreach="docs" t-as="template">
                         <t t-foreach="template.product_variant_ids" t-as="product">
-                            <t t-call="price_etiquette.report_price_label">
+                            <t t-call="flora.report_price_label">
                                 <t t-set="product" t-value="product"/>
                             </t>
                         </t>
