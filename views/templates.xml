@@ -72,9 +72,6 @@
             <field name="dpi">200</field>
         </record>
         
-        <record id="price_etiquette.report_price_template_label">
-            <field name="paperformat_id" ref="price_etiquette.paperformat_label" />
-        </record>
     </data>
 
 </odoo>
